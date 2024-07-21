@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+body{
+    background-color: #f2f2f2;
+}
+
+
+/* Navbar */
+header a{
+    color: #000;
+    transition: all 0.2s;
+}
+
+header .logo img{
+    width: 100%;
+    height: 45px;
+}
+header .logo{
+    width: 50px;
+    height: 50px;
+    
+
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    border: 1.5px solid #e1edc1;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    margin: 20px;
+    
+}
+
+header .nav-links{
+    display: flex;
+    gap: 30px;
+}
+header .nav-links a:hover{
+    color: #5e5d5d;
+    transition: all 0.2s;
+}
+header .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header .buttons button{
+    padding: 4px 10px;
+}
+header .buttons .get-started{
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: 1px solid;
+    border-radius: 8px;
+    height: 40px;
+
+    transition: all 1s;
+
+}
+header .buttons .get-started:hover{
+    background-color: #f2f2f2;
+    color: #000;
+    font-weight: 500;
+    transition: background-color 0.6s;
+}
+header .buttons .login{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 6px;
+    height: 30px;
+    transition: all 0.6s;
+
+}
+header .buttons .login:hover{
+    background-color: #3e5b8f;
+    color: #fff;
+    transition: all 0.6s;
+}
+
+
+/* hero */
+
+main section.hero #hero-img{
+    position: relative;
+    width: 450px; 
+    height: 450px;
+ }
+
+main section.hero #hero-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 12px 12px 10px lightgrey;
+ 
+
+}
+
+
+.hero{
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+.hero .left-side h2,
+.hero .left-side h1{
+    color: #3e5b8f;
+    font-size: 36px;
+    max-width: 570px;
+
+
+}
+.hero .left-side h1{
+    color: #35417b;
+    font-size: 36px;
+    
+
+}
+
+
+.hero .left-side p{
+    font-size: 16px;
+    max-width: 550px;
+    text-wrap: balance;
+    margin-top: 16px;
+}
+
+
+
+/* countries food */
+.countriesFood{
+    padding: 100px 50px;
+}
+.countriesFood h1{
+    margin: 16px 32px;
+}
+.countriesFood .inner{
+    background-color: #f2f2f2;
+    color:#fff;
+    width: 100%;
+    padding: 60px 40px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+    column-gap: 15px;
+    
+}
+.countriesFood a:visited{
+    color: #fff;
+}
+.countriesFood .inner .countrey{
+    border: 1px solid white;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgb(1, 43, 43);
+
+}
+.countriesFood .inner .countrey h3{
+    margin: 16px;
+}
+.countriesFood .inner .countrey .items{
+    padding: 16px 8px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    
+}
+.countriesFood .inner .countrey .items .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom:10px ;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: darkcyan;
+    font-size: 10px;
+    min-width: 25%;
+
+    
+}
+.countriesFood .inner img{
+    width: 100%;
+    height: 90px;
+    border-radius: 12px 12px 0 0;
+    transition: all 0.3s;
+
+}
+.countriesFood .inner img:hover{
+    transform: scale(1.1);
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+/* subscription */
+
+.subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding: 32px;
+}
+.subscription p:nth-child(2){
+    width: 80%;
+    text-wrap: balance;
+    text-align: center;
+}
+
+.subscription .user-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 30px;
+    width: 100%;
+    background:linear-gradient(to right, #357b74, #57699f);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px lightslategray;
+
+}
+.subscription .user-info form input:nth-child(1),
+.subscription .user-info form input:nth-child(2),
+.subscription .user-info form select{
+    margin-inline: 10px;
+    width: 240px;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+.subscription .visa-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 420px;
+    height: 240px;
+    border: 1px solid;
+    position: relative;
+    padding: 18px;
+    background-color: #000;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 10px 10px 15px lightslategray;
+    color: #b5b2b2;
+}
+.subscription .visa-card .visa-logo{
+    width: 100px;
+    position: absolute;
+    right: 12px;    
+}
+.subscription .visa-card p{
+    font-size: 18px;
+}
+.subscription .visa-card .card-number{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: flex-start;
+    position: absolute;
+    top: 105px;
+}
+.subscription .visa-card .card-number input{
+    background-color: #262525;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 32px;
+    font-size: x-large;
+    color: white;
+    padding-inline: 8px;
+}
+.subscription .visa-card .expiring-date div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.subscription .visa-card .expiring-date{
+    display: flex;
+    gap: 32px;
+    position: absolute;
+    top: 170px;
+
+}
+.subscription .visa-card .expiring-date input,
+.subscription .visa-card .cvv-number input{
+    background-color: #262525;
+    color: white;
+    outline: none;
+    border: none;
+    width: 50px;
+}
+
+.subscription .visa-card .cvv-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 170px;
+    gap: 4px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.subscription .subscrib{
+    border: 1px solid;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    background: #35417b;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.subscription .subscrib:hover{
+    background-color: #fff;
+    color: #35417b;
+    transition: all 0.5s;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column; 
+    padding: 50px 0 100px;   
+}
+.contact div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact h2{
+    font-size: 28px;
+    margin: 30px;
+    text-align: center;
+}
+.contact img{
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid;
+    margin-left: 40px;
+}
+
+.contact form{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 30px;
+    width:50%;
+    background:linear-gradient(to right, #357b74, #57699f);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px lightslategray;
+}
+
+.contact form input{
+    margin-inline: 20px;
+    width: 240px;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.contact form textarea{
+    margin-inline: 20px;
+    width: 240px;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    resize: none;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px ;
+}
+
+footer img{
+    width: 280px;
+    border-radius: 80% 100% 100% 100% / 78% 68% 40% 29% ;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+footer a{
+    color: #fff;
+    transition: all 0.3s;
+
+}
+
+footer .nav-links a:hover{
+    color: #b5b2b2;
+    transition: all 0.3s;
+}
+
+footer .links .icons a i{
+    color: #fff;
+    transition: all 0.5s;
+}
+footer .links .icons a:nth-child(1) i:hover{
+    color: #000;
+    transition: all 0.3s;
+
+}
+footer .links .icons a:nth-child(2) i:hover{
+    color: rgb(66, 66, 242);
+    transition: all 0.3s;
+
+}
+footer .links .icons a:nth-child(3) i:hover{
+    color: red;
+    transition: all 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+

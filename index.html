@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Food Recipes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Shawerma logo">
+        </div>
+        <nav class="nav-links">
+            <a href=""><i class="bi bi-house"></i> Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#contact">Contact</a>
+            <a href="#subscripe">Subscripe</a>
+        </nav>
+        <div class="buttons">
+            <button class="get-started">Get strated</button>
+            <button class="login">Login</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="left-side">
+                <h2>Food is our common ground,</h2> <h1>a universal experience.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequatur omnis assumenda nisi, explicabo in eius similique cumque, 
+                </p>
+            </div>
+            <div id="hero-img">
+                <img src="assets/img/hero-2.jpg" >
+            </div>
+        </section>
+        
+        
+        
+        
+        <section class="countriesFood" id="recipes">
+            <h1>Foods from Various Contries</h1>
+            <div class="inner">
+            <div class="countrey">
+                <h3>Egyption</h5>
+                <div class="items">
+                <div class="item">
+                    <img src="assets/img/koushary.jpg">
+                    <a href="recipe.html?koushary" id="koushary">Koushary</a>
+                </div>
+                <div class="item">
+                    <img src="assets/img/molokhia.jpg">
+                    <a href="recipe.html?molokhia" id="molokhia">Molokhia</a>
+                </div>
+                <div class="item">
+                    <img src="assets/img/fattah.jpg">
+                    <a href="recipe.html?fattah" id="fattah">Koushary</a>
+                </div>
+                <div class="item">
+                    <img src="assets/img/mahshi.jpg">
+                    <a href="#">Mahshi</a>
+                </div>
+                <div class="item">
+                    <img src="assets/img/kofta.jpg">
+                    <a href="#">Kofta</a>
+                </div>
+                <div class="item">
+                    <img src="assets/img/hawawshi.jpg">
+                    <a href="#">Hawawshi</a>
+                </div>
+            </div>
+            </div>
+            <div class="countrey">
+                <h3>Italian</h5>
+                <div class="items">
+                    <div class="item">
+                        <img src="assets/img/spaghetti-carbonara.jpg">
+                        <a href="#">Spaghetti</a>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/margherita-pizza.jpg">
+                        <a href="#">Margherita</a>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/tiramisu.jpg">
+                        <a href="">Tiramisu</a>
+                    </div>
+            </div>
+            
+            </div>
+            <div class="countrey">
+                <h3>Chinese</h5>
+                <div class="items">
+                    <div class="item">
+                        <img src="assets/img/dumplings.jpg">
+                        <a href="#">Dumplings</a>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/peking-duck.jpg">
+                        <a href="#">Peking Duck</a>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/mapo-tofu.jpg">
+                        <a href="#">Mapo Tofu</a>
+                    </div>
+            </div>
+
+        </section>
+
+        <!-- subscription -->
+        
+        <section class="subscription" id="subscripe">
+            <h2>Subscribe with 5.99$</h2>
+           
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae 
+            blanditiis a esse iure saepe, soluta illum ut accusantium laboriosam
+            ducimus hic est quos mollitia aliquid nihil, aliquam, dolore sit. Tenetur?
+            </p>
+            
+            <div class="user-info">
+                <form action="#" >
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="text" id="age" name="age">
+                    </div>
+
+                    <div>
+                        <div id="genderContainer" >
+                            <label for="genderContainer">Gender</label>
+                            <label >Male</label>
+                            <input type="radio" name="gender" value="male">
+                            <label >Female</label>
+                            <input type="radio" name="gender" value="female">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="nationality">Nationality</label>
+                        <select id="nationality">
+                            <option selected disabled>Select your countrey...</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="italy">Italy</option>
+                            <option value="china">China</option>
+                            <option value="japan">Japan</option>
+                            <option value="null">other!</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="visa-card">
+                <p>Payment Details</p>
+                <img src="assets/img/visa-logo.png" class="visa-logo">
+                <div class="card-number">
+                    <p>Card Number</p>
+                    <input type="number" maxlength="16" name="cardNumber">
+                </div>
+                <div class="expiring-date">
+                    <div>
+                        <label >Month</label>
+                        <input type="number" name="month">
+                    </div>
+                    <div>
+                        <label>Year</label>
+                        <input type="number" name="year">
+                    </div>
+                </div>
+                <div class="cvv-number">
+                    <label>CVV</label>
+                    <input type="number" name="cvv">
+                </div>
+            </div>
+            <a class="subscrib">Subscribe Now <i class="bi bi-arrow-right"></i> </a>
+        </section>
+
+        <!-- contact -->
+         <section class="contact" id="contact">
+            <h2>Contact</h2>
+           <div>
+            <img src="assets/img/contact.jpg">
+            <form action="#">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10"
+                    cols=32 ></textarea>
+                </div>
+                
+            </form>
+           </div>
+         </section>
+
+    </main>
+    <footer>
+        <img src="assets/img/koushary-2.jpg">
+        <div class="links">
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Recipes</a>
+                <a href="#">Subscripe</a>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
